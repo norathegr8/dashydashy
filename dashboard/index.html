@@ -1387,6 +1387,7 @@
               <tr>
                 <th></th>
                 <th data-sort="caption">Hook <span class="sort-arrow">&#8597;</span></th>
+                <th data-sort="date">Date <span class="sort-arrow">&#8597;</span></th>
                 <th data-sort="hookType">Hook Type <span class="sort-arrow">&#8597;</span></th>
                 <th data-sort="views">Views <span class="sort-arrow">&#8597;</span></th>
                 <th data-sort="likes">Likes <span class="sort-arrow">&#8597;</span></th>
@@ -1666,6 +1667,7 @@
         case 'saves': av=a.metrics.saves; bv=b.metrics.saves; break;
         case 'shares': av=a.metrics.shares; bv=b.metrics.shares; break;
         case 'hookType': av=a.hookType; bv=b.hookType; break;
+        case 'date': av=a.createTime; bv=b.createTime; break;
         case 'caption': av=a.caption; bv=b.caption; break;
         default: av=a.metrics.views; bv=b.metrics.views;
       }
@@ -1690,7 +1692,8 @@
     document.getElementById('library-tbody').innerHTML = visible.map((v, i) => `
       <tr>
         <td class="thumb-cell"><div class="thumb-inner">${top5Ids.has(v.id) ? '<span class="star-badge" title="Top 5 by engagement">&#9733;</span>' : '<span class="star-spacer"></span>'}<a href="${v.url||'#'}" target="_blank" rel="noopener"><img class="video-thumb" src="${v.coverUrl||''}" alt="" onerror="this.style.display='none'" /></a></div></td>
-        <td><div class="video-caption">${esc(v.hook||v.caption||'No hook')}</div><div class="video-date">${fmtDate(v.createTime)}</div></td>
+        <td><div class="video-caption">${esc(v.hook||v.caption||'No hook')}</div></td>
+        <td class="video-date">${fmtDate(v.createTime)}</td>
         <td><span class="hook-badge ${v.hookType}">${hl(v.hookType)}</span></td>
         <td class="metric">${fmt(v.metrics.views)}</td>
         <td class="metric">${fmt(v.metrics.likes)}</td>
