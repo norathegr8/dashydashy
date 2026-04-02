@@ -1,0 +1,52 @@
+{
+  "hookTypes": [
+    {
+      "id": "question",
+      "name": "Question",
+      "description": "Opens with a direct question to the viewer",
+      "examples": ["Did you know...?", "What would you do if...?", "Why does nobody talk about...?"]
+    },
+    {
+      "id": "shock_contrarian",
+      "name": "Shock/Contrarian",
+      "description": "Surprising or provocative statement to grab attention",
+      "examples": ["Stop doing X immediately", "Everything you know about X is wrong", "This is why X is a scam"]
+    },
+    {
+      "id": "story",
+      "name": "Story",
+      "description": "Starts with a narrative setup",
+      "examples": ["So this happened to me yesterday...", "I was at the store when...", "The craziest thing just happened"]
+    },
+    {
+      "id": "insight",
+      "name": "Insight",
+      "description": "Leads with a takeaway or lesson",
+      "examples": ["Here's what I learned after 5 years of...", "The secret to X is...", "Most people don't realize..."]
+    },
+    {
+      "id": "authority",
+      "name": "Authority",
+      "description": "Establishes credibility upfront",
+      "examples": ["As a doctor, I can tell you...", "After working with 100+ clients...", "I've been doing this for 10 years"]
+    },
+    {
+      "id": "confession",
+      "name": "Confession",
+      "description": "Personal admission or vulnerability",
+      "examples": ["I have to be honest about something...", "I was wrong about...", "Nobody knows this but..."]
+    },
+    {
+      "id": "list",
+      "name": "List",
+      "description": "Numbered or structured format",
+      "examples": ["3 things you need to know about...", "Top 5 mistakes...", "Here are 7 ways to..."]
+    },
+    {
+      "id": "pattern_interrupt",
+      "name": "Pattern Interrupt",
+      "description": "Unexpected opening that breaks viewer expectations",
+      "examples": ["*starts mid-action*", "POV: ...", "Wait for it...", "Don't scroll past this"]
+    }
+  ]
+}

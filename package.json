@@ -1,0 +1,21 @@
+{
+  "name": "tiktok-creator-dashboard",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "TikTok Creator Dashboard — scrape, analyze hooks, and visualize content performance",
+  "scripts": {
+    "scrape": "node scripts/scrape.js",
+    "fetch-transcripts": "node scripts/fetch-transcripts.js",
+    "analyze": "node scripts/analyze.js",
+    "pipeline": "node scripts/pipeline.js",
+    "start": "node scripts/serve.js"
+  },
+  "dependencies": {
+    "apify-client": "^2.9.0",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

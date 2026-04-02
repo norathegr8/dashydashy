@@ -1,0 +1,7 @@
+node_modules/
+.env
+.DS_Store
+
+# Generated data (unique per client — don't commit)
+data/raw/*.json
+data/analyzed/*.json
