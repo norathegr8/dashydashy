@@ -42,7 +42,7 @@ async function scrape() {
     profileSorting: 'latest',
     shouldDownloadCovers: true,
     downloadSubtitlesOptions: 'DOWNLOAD_AND_TRANSCRIBE_VIDEOS_WITHOUT_SUBTITLES',
-    excludePinnedPosts: false,
+    excludePinnedPosts: true,
   };
 
   console.log('Starting Apify run (clockworks/tiktok-scraper)...');

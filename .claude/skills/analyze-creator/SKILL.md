@@ -31,7 +31,7 @@ Use the Apify MCP tool `call-actor` with:
     "profileSorting": "latest",
     "shouldDownloadCovers": true,
     "downloadSubtitlesOptions": "DOWNLOAD_AND_TRANSCRIBE_VIDEOS_WITHOUT_SUBTITLES",
-    "excludePinnedPosts": false
+    "excludePinnedPosts": true
   }
   ```
 
