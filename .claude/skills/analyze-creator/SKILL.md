@@ -113,7 +113,17 @@ Follow the instructions in `.claude/skills/signature-series/SKILL.md`:
 - Add `signatureSeries` array to the first object in the analyzed JSON
 - Write back to `data/analyzed/tiktok-analyzed.json`
 
-## Step 8: Start the dashboard
+## Step 8: Refresh the upload-this-to-github folder
+
+Copy the latest dashboard and data into the sharing folder so it's always ready to upload:
+```bash
+cp "<project_root>/data/analyzed/tiktok-analyzed.json" "<project_root>/upload-this-to-github/data/analyzed/tiktok-analyzed.json"
+cp "<project_root>/dashboard/index.html" "<project_root>/upload-this-to-github/dashboard/index.html"
+```
+
+This keeps `upload-this-to-github/` in sync automatically — the SMM never has to manually copy files.
+
+## Step 9: Start the dashboard
 
 Run the dashboard server:
 ```bash
@@ -122,7 +132,7 @@ export PATH="/usr/local/bin:$PATH" && cd "<project_root>" && nohup node scripts/
 
 Tell the user: "Your dashboard is ready at http://localhost:3456"
 
-## Output
+## Step 10: Output
 
 After completing all steps, give the user a summary:
 - Creator name and follower count

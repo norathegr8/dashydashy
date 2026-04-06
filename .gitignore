@@ -5,3 +5,6 @@ node_modules/
 # Generated data (unique per client — don't commit)
 data/raw/*.json
 data/analyzed/*.json
+
+# But DO commit the upload-this-to-github folder (it's meant to be pushed)
+!upload-this-to-github/data/analyzed/tiktok-analyzed.json

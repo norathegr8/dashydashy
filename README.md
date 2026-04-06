@@ -111,6 +111,56 @@ Claude will clear the old data and start fresh for the new creator.
 
 ---
 
+## Sharing the Dashboard with Your Client
+
+Every time you analyze a creator, Claude automatically updates a folder in your project called **`upload-this-to-github`**. That folder has everything your client needs — you just upload it to a new GitHub repo and turn on GitHub Pages.
+
+### Step 1: Create a GitHub account (if you don't have one)
+
+Go to [github.com](https://github.com) and sign up. It's free.
+
+### Step 2: Create a new repository
+
+1. Click the **+** button in the top right corner of GitHub
+2. Click **New repository**
+3. Name it something like `lana-dashboard` (use your client's name)
+4. Set it to **Public** (required for free GitHub Pages)
+5. Click **Create repository**
+
+### Step 3: Upload the files
+
+1. On the new repo page, click **uploading an existing file**
+2. Open the **`upload-this-to-github`** folder inside your project
+3. Drag the **two folders inside it** into GitHub's upload area:
+   - `dashboard`
+   - `data`
+4. Click **Commit changes**
+
+> ⚠️ Drag the folders *inside* `upload-this-to-github`, not the `upload-this-to-github` folder itself.
+
+### Step 4: Enable GitHub Pages
+
+1. Go to your repo's **Settings** tab
+2. In the left sidebar, click **Pages**
+3. Under "Source", select **main** branch
+4. Under "Folder", select **/ (root)**
+5. Click **Save**
+6. Wait 1–2 minutes for it to deploy
+
+### Step 5: Share the link
+
+Your client's dashboard will be live at:
+
+**https://yourusername.github.io/lana-dashboard/dashboard/**
+
+Send this link to your client. They can open it from any browser — no installs, no login needed.
+
+### Updating the dashboard
+
+When you re-run the analysis for the same client, Claude will automatically update `upload-this-to-github` again. Just go back to your GitHub repo, click **Add file → Upload files**, and re-upload the `data` folder from inside `upload-this-to-github`. The site will update within a few minutes.
+
+---
+
 ## Re-running Parts Separately
 
 Already ran the full analysis but want to regenerate just one section? Type any of these:
